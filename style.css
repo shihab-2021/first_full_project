@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+/* label er niche khali jaiga nai keno  */
+/* or class thik moto kaj kore na  */
+/* justify-content: start; etar mane ki  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight: 300;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#right {
+    flex: 1;
+}
+
+/* sign in  */
+
+#signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form {
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin .logo {
+    margin-bottom: 7vh;
+}
+
+#signin .logo h1 {
+    color: cyan;
+    font-size: xx-large;
+    font-family: 'Yellowtail', cursive;
+    /* width: 200px; */
+}
+
+#signin form {
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin lebel {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 2rem;
+    /* padding-bottom: 20px; */
+    /* width: 100%; */
+}
+
+#signin .text-input {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    border-radius: 2px;
+    background: black;
+    border: 1px solid crimson;
+    line-height: 1.3rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+#signin .primary-btn {
+    width: 100%;
+}
+
+/* Button  */
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    background: crimson;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 2.7rem;
+    display: block;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.primary-btn:hover {
+    background: rgb(224, 83, 111);
+    color: #fff;
+}
+
+#signin .secondary-btn,
+or,
+.links{
+    width: 60%;
+}
+
+#signin .links a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+#signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaaa;
+}
+
+#signin .or span {
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    border: 1px solid crimson;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+    border: 1px solid white;
+    color: crimson;
+}
+
+#main-footer {
+    margin-top: 60px;
+    max-width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 3rem;
+}
+
+#main-footer a {
+    margin-top: 20px;
+    display: inline-block;
+    color: red;
+    text-decoration: underline;
+}
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./image/pica\ 1.jpg) no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
+
+#showcase .showcase-text {
+    font-family: 'Yellowtail', cursive;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: darkgray;
+    width: 100%;
+}
+
+#showcase .secondary-btn {
+    width: 60%;
+    margin: auto;
+}
+
+/* Midia quaries */
+
+@media (min-width: 1200px){
+    #left {
+        flex: 4;
+    }
+    #right {
+        flex: 6;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    #left {
+        justify-content: start;
+        margin-top: 6vh;
+    }
+    /* #signin .logo {
+        margin-bottom: 2vh;
+    } */
+    /* #signin .text-input {
+        margin-bottom: 0.7rem;
+    } */
+    #main-footer {
+        padding-top: 1rem;
+    }
+}
